@@ -60,3 +60,4 @@ sync_model(db1, db2, 'res.partner',
 # ['l10n_ar_afip_responsibility_type_id', 'l10n_latam_identification_type_id',],
 [],
 domain + ['|', ('supplier', '=', True), ('id', 'in', supplier_ids + brand_partner_ids + manufacturer_ids)]) # ALWAYS BRING ALL PARTNERS, they might not be necessarily updated, and still be required by a product.
+diff --git a/partners.py b/partners.py
